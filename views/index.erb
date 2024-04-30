@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Vonage VCR Sinatra Messages Test</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="http://cdn.simplecss.org/simple.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+  </head>
+  <body>
+    <article class="form">
+      <h1>Vonage VCR Sinatra Messages Test</h1>
+
+      <form action="/" method="post">
+        <div>
+          <label for="number">Number</label>
+          <input type="text" name="number" placeholder="447900000000" required>
+        </div>
+        <div>
+          <label for="message">Message</label>
+          <textarea name="message" placeholder="Hello from Vonage VCR Sinatra Messages Test" required></textarea>
+        </div>
+        <div>
+          <input type="submit" value="Submit">
+        </div>
+      </form>
+
+      <% if @status_message %>
+          <div class="flash-notice <%= @status_message[:class] %>">
+            <%= @status_message[:text] %>
+          </div>
+      <% end %>
+    </article>
+  </body>
+</html>

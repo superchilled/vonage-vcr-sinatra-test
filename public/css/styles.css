@@ -1,0 +1,22 @@
+.form label {
+  font-weight: bold;
+}
+
+.flash-notice {
+  color: #fff;
+  font-weight: bold;
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.flash-success {
+  background-color: rgb(104, 218, 161);
+
+}
+
+.flash-error {
+  background-color: rgb(242, 88, 88);
+}
